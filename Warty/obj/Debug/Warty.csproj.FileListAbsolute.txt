@@ -1,0 +1,10 @@
+C:\Users\dant\My Code\Warty\HoptoadNetifier\bin\Debug\Warty.dll
+C:\Users\dant\My Code\Warty\HoptoadNetifier\bin\Debug\Warty.pdb
+C:\Users\dant\My Code\Warty\HoptoadNetifier\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dant\My Code\Warty\HoptoadNetifier\obj\Debug\Warty.dll
+C:\Users\dant\My Code\Warty\HoptoadNetifier\obj\Debug\Warty.pdb
+C:\Users\dant\My Code\Warty\Warty\bin\Debug\Warty.dll
+C:\Users\dant\My Code\Warty\Warty\bin\Debug\Warty.pdb
+C:\Users\dant\My Code\Warty\Warty\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dant\My Code\Warty\Warty\obj\Debug\Warty.dll
+C:\Users\dant\My Code\Warty\Warty\obj\Debug\Warty.pdb

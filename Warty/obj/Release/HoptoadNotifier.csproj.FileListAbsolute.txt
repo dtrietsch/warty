@@ -1,0 +1,5 @@
+C:\Users\dant\My Code\HoptoadNetifier\HoptoadNetifier\bin\Release\HoptoadNotifier.dll
+C:\Users\dant\My Code\HoptoadNetifier\HoptoadNetifier\bin\Release\HoptoadNotifier.pdb
+C:\Users\dant\My Code\HoptoadNetifier\HoptoadNetifier\obj\Release\ResolveAssemblyReference.cache
+C:\Users\dant\My Code\HoptoadNetifier\HoptoadNetifier\obj\Release\HoptoadNotifier.dll
+C:\Users\dant\My Code\HoptoadNetifier\HoptoadNetifier\obj\Release\HoptoadNotifier.pdb

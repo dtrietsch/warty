@@ -8,3 +8,8 @@ C:\Users\dant\My Code\Warty\Warty\bin\Debug\Warty.pdb
 C:\Users\dant\My Code\Warty\Warty\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\dant\My Code\Warty\Warty\obj\Debug\Warty.dll
 C:\Users\dant\My Code\Warty\Warty\obj\Debug\Warty.pdb
+C:\Users\dant\My Code\SVN\160.10.00\Warty\Warty\bin\Debug\Warty.dll
+C:\Users\dant\My Code\SVN\160.10.00\Warty\Warty\bin\Debug\Warty.pdb
+C:\Users\dant\My Code\SVN\160.10.00\Warty\Warty\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dant\My Code\SVN\160.10.00\Warty\Warty\obj\Debug\Warty.dll
+C:\Users\dant\My Code\SVN\160.10.00\Warty\Warty\obj\Debug\Warty.pdb

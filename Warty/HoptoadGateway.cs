@@ -10,19 +10,17 @@ namespace Warty
     public class HoptoadGateway
     {
         private const string VERSION = "2.0";
-        private const string API_KEY = "key goes here";
         private const string NOTIFIER_NAME = "Warty";
         private const string NOTIFIER_VERSION = "0.0.1";
         private const string NOTIFIER_URL = "https://github.com/dtrietsch/warty";
-        private const string ENVIRONMENT_NAME = "development";
         private const string NOTIFIER_API_URL = @"http://hoptoadapp.com/notifier_api/v2/notices";
 
-        public string Notify(Exception e)
+        public string Notify(string api_key, string environment_name, Exception e)
         {
-            return SendXmlToHoptoad(ConvertExceptionIntoNotificationXml(e));
+            return SendXmlToHoptoad(ConvertExceptionIntoNotificationXml(api_key, environment_name, e));
         }
 
-        private XmlDocument ConvertExceptionIntoNotificationXml(Exception e)
+        private XmlDocument ConvertExceptionIntoNotificationXml(string api_key, string environment_name, Exception e)
         {
             System.Diagnostics.StackTrace trace = new System.Diagnostics.StackTrace(e, true);
 
@@ -38,7 +36,7 @@ namespace Warty
 
             XmlNode apiKey;
             apiKey = hoptoadXml.CreateElement("api-key");
-            apiKey.InnerText = API_KEY;
+            apiKey.InnerText = api_key;
             notice.AppendChild(apiKey);
 
             XmlNode notifier, notifierName, notifierVersion, notifierUrl;
@@ -87,7 +85,7 @@ namespace Warty
             serverEnvironment = hoptoadXml.CreateElement("server-environment");
             notice.AppendChild(serverEnvironment);
             environmentName = hoptoadXml.CreateElement("environment-name");
-            environmentName.InnerText = ENVIRONMENT_NAME;
+            environmentName.InnerText = environment_name;
             serverEnvironment.AppendChild(environmentName);
 
             return hoptoadXml;

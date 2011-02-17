@@ -6,13 +6,9 @@ This code was built using a Gateway pattern as described by Martin Fowler in Pat
 
 Usage is a snap:
 
-(1) Edit the code to add your API-KEY from Hoptoad.
+(1) Add a reference to the DLL.
 
-(2) Compile.
-
-(3) Add a reference to the DLL.
-
-(4) Call the Gateway's Notify method and pass in your exception.
+(2) Call the Gateway's Notify method and pass in your api key, environment name, and exception.
 
 To what extent?
 Use it, copy it, fork it, whatever, as much as you want.

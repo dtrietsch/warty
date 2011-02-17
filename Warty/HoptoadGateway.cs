@@ -95,30 +95,20 @@ namespace Warty
 
         private string SendXmlToHoptoad(XmlDocument hoptoadXml)
         {
-           string notifierApiUrl = NOTIFIER_API_URL;
+            string notifierApiUrl = NOTIFIER_API_URL;
 
             WebRequest notifierRequest = WebRequest.Create(notifierApiUrl);
-
             notifierRequest.Method = "Post";
-
             notifierRequest.ContentType = "text/xml";
-
             UTF8Encoding encoder = new UTF8Encoding();
-
             byte[] data = encoder.GetBytes(hoptoadXml.InnerXml.ToString());
-
             notifierRequest.ContentLength = data.Length;
-
             Stream requestStream = notifierRequest.GetRequestStream();
-
             requestStream.Write(data, 0, data.Length);
-
             requestStream.Close();
 
             WebResponse response = notifierRequest.GetResponse();
-
             StreamReader streamReader = new StreamReader(response.GetResponseStream());
-
             return streamReader.ReadToEnd();
         }
     }

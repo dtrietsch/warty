@@ -1,7 +1,8 @@
-﻿What?
+﻿What is this?
 This is code to send then receive XML to Hoptoad's notifier API via .NET.
 
-How?
+
+How do I use it?
 This code was built using a Gateway pattern as described by Martin Fowler in Patterns of Enterprise Application Architecture.
 
 Usage is a snap:
@@ -9,6 +10,17 @@ Usage is a snap:
 (1) Add a reference to the DLL.
 
 (2) Call the Gateway's Notify method and pass in your api key, environment name, and exception.
+
+An easy way to do this is to add it to your Global.asax like this:
+
+  protected void Application_Error(object sender, EventArgs e)
+  {
+    HoptoadGateway hoptoadGateway = new HoptoadGateway();
+    hoptoadGateway.Notify(ConfigurationManager.AppSettings["hoptoadNotifierApiKey"],
+      ConfigurationManager.AppSettings["hoptoadNotifierEnvironment"], HttpContext.Current.Request,
+      Server.GetLastError().GetBaseException());
+  }
+
 
 To what extent?
 Use it, copy it, fork it, whatever, as much as you want.
